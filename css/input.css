@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/bookshelf4.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(23, 96, 253);
+  display: flex;
+  text-decoration: none;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+}
+.nav a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.nav .nav_heading {
+  /* background-color: rgb(41, 11, 11); */
+  width: 40%;
+  margin-right: 10%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Kalam", cursive;
+}
+.nav .links {
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container {
+  color: white;
+  background-color: rgba(3, 42, 65, 0.9);
+  padding: 1% 3%;
+  margin-top: 10vh;
+}
+.container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+}
+.container p {
+  font-family: "Roboto", sans-serif;
+  color: rgb(195, 195, 195);
+  font-size: .7rem;
+}
+.container .heading {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+form {
+  font-family: "Roboto", sans-serif;
+}
+form label {
+  font-size: .8rem;
+}
+form input {
+  margin-top: 0.2rem;
+  border: none;
+  padding-left: 0.2rem;
+}
+form input:focus {
+  border: solid rgb(23, 96, 253);
+}
+form input {
+  width: 100%;
+  height: 1.7rem;
+  margin-bottom: 1rem;
+}
+select {
+  width: 100%;
+  height: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+select option {
+  font-size: 1rem;
+  padding: 1%;
+}
+button {
+  cursor: pointer;
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgb(23, 96, 253);
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  transition: ease 0.3s;
+}
+button:hover {
+  background-color: rgb(14, 68, 185);
+}
+.account_para {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.account_para a {
+  text-decoration: none;
+  color: rgb(23, 96, 253);
+}

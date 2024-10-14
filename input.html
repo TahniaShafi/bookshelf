@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Description</title>
+    <link rel="stylesheet" href="css/input.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class='nav'>
+        <div class='nav_heading'>
+            <h1>BOOKSHELF</h1>
+        </div>
+        <div class='links'> <a href='about.html'>About Us</a><a href='contact.html'>Contact</a><a
+                href='login.html'>Login</a><a href='input.html'>Sell Book</a></div>
+    </div>
+<div class="container">
+    <div class="heading">
+        <h1 class="heading_text">BOOK DETAILS</h1>
+        <p class="subheading_text">
+            Sell your books here
+        </p>
+    </div>
+    <form action="input.py" method="post" enctype="multipart/form-data">
+        <label for="book_name">Book Name</label><br>
+        <input type="text" placeholder="Enter your book name" id="book_name" name="book_name" required><br>
+        <label for="book_price">Book Price</label><br>
+        <input type="number" placeholder="Enter your book price in BDT" id="book_price" name="book_price" required><br>
+        <label for="book_writer">Book Writer</label><br>
+        <input type="text" placeholder="Enter your book writer name" id="book_writer" name="book_writer" required><br>
+        <label for="mobile_no">Mobile No</label><br>
+        <input type="number" placeholder="Enter your mobile no" id="mobile_no" name="mobile_no" required><br>
+        <label for="book_category">Select your book category</label><br>
+        <select name="book_category" id="book_category" required>
+            <option value=" Islamic">Islamic</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Journal">Journal</option>
+            <option value="Sports">Sports</option>
+            <option value="Educational">Educational</option>
+            <option value="Politics">Politics</option>
+        </select><br>
+        <label for="book_image">Book Image</label><br>
+        <input type="file" id="book_image" name="image" required><br>
+        <button type="submit">Post To Sell</button>
+        <br>
+    </form>
+</div>
+</body>
+</html>

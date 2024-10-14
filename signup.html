@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class='nav'>
+        <div class='nav_heading'>
+            <h1>BOOKSHELF</h1>
+        </div>
+        <div class='links'> <a href='about.html'>About Us</a><a href='contact.html'>Contact</a><a
+                href='login.html'>Login</a><a href='input.html'>Sell Book</a></div>
+    </div>
+<div class="container">
+    <div class="heading">
+        <h1 class="heading_text">SIGNUP HERE</h1>
+        <p class="subheading_text">
+            Signup for Buy or Sell Books
+        </p> 
+    </div>
+    <form method="post" action="signup.py">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+        <label for="password" class="label_two">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+
+        <input type="checkbox" id="terms" name="terms" value="agreed" required>
+        <label for="terms">Agree to our terms & conditions.</label> <br><br>
+        <button type="submit" value="submit">Create Account</button>
+    </form>
+    <div class="account_para">
+        <p><a href="terms.html">Our terms & conditions.</a></p><br><br>
+        <p>Already have an account? <a href="login.html">Login Here</a></p>
+    </div>
+</div>
+</body>
+</html>

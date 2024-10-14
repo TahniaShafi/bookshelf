@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+}
+.nav {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(23, 96, 253);
+  display: flex;
+  text-decoration: none;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+}
+.nav a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.nav .nav_heading {
+  /* background-color: rgb(41, 11, 11); */
+  width: 40%;
+  margin-right: 10%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Kalam", cursive;
+}
+.nav_heading a {
+  font-family: "Kalam", cursive;
+}
+.nav .links {
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.links input {
+  border: none;
+  height: 1.5rem;
+  border-radius: 15px;
+  padding-left: 1rem;
+}
+.heading_part {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/bookbg2.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+}
+.body_heading {
+  color: white;
+  margin-right: 10%;
+  margin-top: 15%;
+}
+.body_heading h1 {
+  font-family: "Kalam", cursive;
+  font-size: 4.5rem;
+}
+.body_heading p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  word-spacing: 0.2rem;
+  color: rgb(211, 211, 211);
+}
+.body_heading p:nth-child(2) {
+  margin-bottom: 0.5rem;
+}
+.body_heading button {
+  cursor: pointer;
+  width: 60%;
+  height: 2.5rem;
+  background-color: rgb(23, 96, 253);
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  margin-top: 3rem;
+  transition: ease 0.3s;
+}
+.body_heading button a {
+  text-decoration: none;
+  color: white;
+}
+button:hover {
+  background-color: rgb(14, 68, 185);
+}
+.about_us {
+  margin-top: 7%;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_image {
+  height: 20rem;
+  width: 15rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+.about_heading h1 {
+  font-family: "Kalam", cursive;
+}
+.about_info {
+  display: flex;
+  justify-content: space-around;
+}
+.about_para {
+  width: 60%;
+  padding: 2% 5%;
+}
+.about_para p {
+  line-height: 1.6rem;
+}
+.about_image img {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.book_info {
+  margin-top: 5%;
+  height: 367px;
+  width: 210px;
+  /* background-color: green; */
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: ease 0.4s;
+}
+.book_info:hover {
+  background-color: rgb(163, 199, 255);
+}
+.book_info:hover > button {
+  display: block;
+}
+.book_info h1 {
+  font-size: 1rem;
+  font-family: "Kalam", cursive;
+  margin-bottom: 0.1rem;
+}
+.book_info h4,
+p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.1rem;
+}
+.book_info h4 {
+  margin-bottom: 1rem;
+}
+.book_info .book_image {
+  height: 230px;
+  width: 210px;
+  margin-bottom: 0.5rem;
+}
+.book_info img {
+  width: 100%;
+  height: 100%;
+}
+.book_info button {
+  cursor: pointer;
+  width: 40%;
+  height: 1.7rem;
+  background-color: rgb(23, 96, 253);
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7rem;
+  transition: ease 0.3s;
+  /* border-radius: 6px; */
+  margin-bottom: 0;
+  display: none;
+  /* transition: all 1s; */
+}
+.book_info button a {
+  text-decoration: none;
+  color: white;
+}
+button:hover {
+  background-color: rgb(14, 68, 185);
+}
+.footer {
+  background-color: rgb(235, 235, 235);
+  /* height: 70vh; */
+  width: 100%;
+  padding: 3%;
+}
+.contact_input {
+  /* background-color: rgb(14, 68, 185); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact_input_center {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer_heading {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: flex-start; */
+}
+.footer_heading h1 {
+  font-family: "Kalam", cursive;
+  color: black;
+}
+.footer input {
+  height: 2rem;
+  width: 17rem;
+  margin-top: 0.3rem;
+  border: none;
+  padding-left: 0.1rem;
+  border: 0.1rem solid rgb(23, 96, 253);
+}
+#user_text {
+  height: 5rem;
+}
+.footer label {
+  font-family: "Roboto", sans-serif;
+}
+.footer button {
+  cursor: pointer;
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgb(23, 96, 253);
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  transition: ease 0.3s;
+}
+button:hover {
+  background-color: rgb(14, 68, 185);
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+}
